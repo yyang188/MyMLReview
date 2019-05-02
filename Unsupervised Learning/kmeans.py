@@ -16,7 +16,6 @@ def kmeans(C,data):
 
 	idx = np.random.choice(data.shape[0],C,replace=False)
 
-	
 	data = pd.DataFrame(data)
 	data['label'] = [0]*m
 	center = pd.DataFrame(data.iloc[idx,:])
@@ -42,15 +41,14 @@ def kmeans(C,data):
 		if center.equals(C_means):
 			clu = False
 		else:
-
 			center = C_means
 
-	plt.scatter(data.iloc[:,0],data.iloc[:,1],c = data['label'])
-	plt.show()
+	return data
 
-	return data['label']
-
-print(kmeans(2,data))
+data = kmeans(2,data)
+print(data)
+plt.scatter(data.iloc[:,0],data.iloc[:,1],c = data['label'])
+plt.show()
 
 
 
