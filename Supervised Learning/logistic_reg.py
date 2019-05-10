@@ -1,3 +1,5 @@
+# Code for logistic regression below are created while I was taking online learning module in Cousera made by Andrew Ng.
+
 def sigmoid(z):
 
     s = 1.0 / (1 + 1 / np.exp(z))
