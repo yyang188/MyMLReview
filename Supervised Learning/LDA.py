@@ -71,7 +71,7 @@ def LDA_classifier(data,label):
 	uk = np.array(data.groupby(label).mean())
 
 
-	############ Calculate w & c ##############
+	############ Calculate w & b ##############
 
 	w = np.zeros([n-1,num_c])
 	b = np.zeros((1,num_c))[0]
