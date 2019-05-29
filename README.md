@@ -1,2 +1,2 @@
 # MyMLReview
-This repository contains some ML code I created for self-study. Some code are totally made by myself for reviewing, and some are code I wrote while I was taking courses back to school including online learning resources such as Cousera, which might make the structure of code similar to what you might be able to find somewhere else, but the main part of code are still totally created originally by myself.
+This repository contains some ML code I created for self-study. Mostly, I used the famous iris dataset.
